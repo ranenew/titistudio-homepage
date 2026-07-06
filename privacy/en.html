@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — TiTi Studio</title>
+  <meta name="description" content="Privacy Policy for all TiTi Studio apps and services including Episode, Money Synapse, and ARTy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: 'DM Sans', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.8; }
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 80px 40px 120px; }
+    .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 12px; }
+    .back-btn { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: #7A7A7A; transition: color 0.18s; }
+    .back-btn:hover { color: #3F5576; }
+    .lang-switch { display: flex; align-items: center; }
+    .lang-a { font-size: 12px; color: #ADADAD; text-decoration: none; transition: color 0.18s; padding: 2px 0; }
+    .lang-a:hover { color: #3F5576; }
+    .lang-a.active { font-weight: 600; color: #3F5576; }
+    .lang-sep { color: #D8D3C4; font-size: 11px; padding: 0 7px; user-select: none; }
+    .doc-label { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #3F5576; opacity: 0.75; margin-bottom: 14px; }
+    .doc-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 5vw, 48px); font-weight: 500; letter-spacing: -0.025em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
+    .doc-subtitle { font-size: 15px; color: #7A7A7A; margin: 0 0 16px; }
+    .doc-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px; }
+    .doc-meta span { font-size: 13px; color: #ADADAD; }
+    .doc-meta strong { font-weight: 500; color: #7A7A7A; }
+    hr { border: none; border-top: 1px solid #E5E0D5; margin: 0 0 48px; }
+    .notice { background: #EDF1F7; border-left: 3px solid #3F5576; border-radius: 0 8px 8px 0; padding: 16px 20px; margin-bottom: 40px; }
+    .notice p { font-size: 14px; color: #3F5576; font-weight: 500; margin: 0; line-height: 1.75; }
+    .toc { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-bottom: 56px; }
+    .toc-title { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #ADADAD; margin: 0 0 14px; }
+    .toc ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .toc a { text-decoration: none; font-size: 14px; color: #5A5A5A; transition: color 0.18s; }
+    .toc a:hover { color: #3F5576; }
+    .s { margin-bottom: 52px; }
+    .s h2 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; padding-top: 8px; display: flex; align-items: baseline; gap: 10px; }
+    .n { font-size: 12px; font-weight: 500; color: #3F5576; opacity: 0.6; letter-spacing: 0.05em; flex-shrink: 0; }
+    .s p { font-size: 15px; line-height: 1.85; color: #5A5A5A; margin: 0 0 14px; }
+    .s p:last-child { margin-bottom: 0; }
+    .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+    th { background: #F4F1EC; font-weight: 500; color: #3A3A3A; padding: 10px 14px; text-align: left; border: 1px solid #E5E0D5; white-space: nowrap; }
+    td { padding: 10px 14px; border: 1px solid #E5E0D5; color: #5A5A5A; vertical-align: top; line-height: 1.65; }
+    tr:nth-child(even) td { background: #FDFCF9; }
+    td a { color: #3F5576; text-decoration: none; font-size: 12px; }
+    td a:hover { text-decoration: underline; }
+    .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .green-box p { font-size: 14px; color: #5A7A40; font-weight: 500; margin: 0; line-height: 1.75; }
+    .cbox { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
+    .cbox p { font-size: 14px; color: #7A7A7A; margin: 0 0 8px; }
+    .cbox p:last-child { margin-bottom: 0; }
+    .cbox a { color: #3F5576; text-decoration: none; font-weight: 500; }
+    .cbox a:hover { text-decoration: underline; }
+    .op-table td:first-child { font-weight: 500; color: #3A3A3A; white-space: nowrap; width: 36%; }
+    .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
+    .doc-footer a:hover { color: #3F5576; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
+    @media (max-width: 600px) {
+      .page-wrap { padding: 60px 20px 100px; }
+      .toc, .cbox { padding: 20px; }
+      table { font-size: 12.5px; }
+      th, td { padding: 8px 10px; }
+      .op-table td:first-child { width: auto; white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <a href="../index.html" class="back-btn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Home
+    </a>
+    <div class="lang-switch">
+      <a href="ko.html" class="lang-a">한국어</a>
+      <span class="lang-sep">|</span>
+      <span class="lang-a active">English</span>
+    </div>
+  </div>
+
+  <p class="doc-label">Legal</p>
+  <h1 class="doc-title">Privacy Policy</h1>
+  <p class="doc-subtitle">개인정보처리방침</p>
+  <div class="doc-meta">
+    <span><strong>Last updated:</strong> July 6, 2026</span>
+    <span><strong>Effective date:</strong> July 6, 2026</span>
+  </div>
+  <hr>
+
+  <div class="notice">
+    <p>This Privacy Policy applies to all applications and web services provided by TITI STUDIO, including Episode, Money Synapse, ARTy, and any future services.</p>
+  </div>
+
+  <nav class="toc">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#p1">About the Operator</a></li>
+      <li><a href="#p2">Information We Collect</a></li>
+      <li><a href="#p3">How We Use Your Information</a></li>
+      <li><a href="#p4">Data Retention</a></li>
+      <li><a href="#p5">Third-Party Services &amp; Sub-processors</a></li>
+      <li><a href="#p6">International Data Transfers</a></li>
+      <li><a href="#p7">Third-Party Sharing</a></li>
+      <li><a href="#p8">Your Rights</a></li>
+      <li><a href="#p9">Account Deletion</a></li>
+      <li><a href="#p10">Children's Privacy</a></li>
+      <li><a href="#p11">Cookies &amp; Tracking</a></li>
+      <li><a href="#p12">Security</a></li>
+      <li><a href="#p13">Contact &amp; Privacy Officer</a></li>
+    </ol>
+  </nav>
+
+  <!-- 01 -->
+  <div id="p1" class="s">
+    <h2><span class="n">01</span>About the Operator</h2>
+    <table class="op-table">
+      <tbody>
+        <tr><td>Operator</td><td>TITI STUDIO (Sole Proprietorship)</td></tr>
+        <tr><td>Business Registration No.</td><td>116-08-87972 (Republic of Korea)</td></tr>
+        <tr><td>Business Type</td><td>Information &amp; Communications / Application Software Development</td></tr>
+        <tr><td>Established</td><td>June 1, 2026</td></tr>
+        <tr><td>Contact Email</td><td><a href="mailto:contact@titistudio.kr" style="color:#3F5576;text-decoration:none;font-weight:500;">contact@titistudio.kr</a></td></tr>
+        <tr><td>Website</td><td><a href="https://titistudio.kr" style="color:#3F5576;text-decoration:none;font-weight:500;">https://titistudio.kr</a></td></tr>
+        <tr><td>Address</td><td>Not disclosed to protect the personal privacy of the sole proprietor.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 02 -->
+  <div id="p2" class="s">
+    <h2><span class="n">02</span>Information We Collect</h2>
+    <p>We collect only the minimum information necessary to provide our Services.</p>
+    <table>
+      <thead><tr><th>Category</th><th>Data Collected</th><th>How</th></tr></thead>
+      <tbody>
+        <tr><td>Account Info</td><td>Email address, display name</td><td>Entered at sign-up</td></tr>
+        <tr><td>Social Login Info</td><td>Email, display name (providers: Apple, Google, Kakao)</td><td>Received from provider at login</td></tr>
+        <tr><td>Usage Data</td><td>Feature usage history, error logs</td><td>Automatically during use</td></tr>
+        <tr><td>Device Info</td><td>Device model, OS version, app version, push token (for notifications)</td><td>Automatically during use</td></tr>
+        <tr><td>Subscription &amp; Purchase</td><td>Subscription status, subscription ID (payment details handled by App Store / Google Play)</td><td>At time of subscription</td></tr>
+        <tr><td>User Content</td><td>Notes, journal entries, tags, and other content entered directly in the app</td><td>User input</td></tr>
+      </tbody>
+    </table>
+    <p>Content you create in the app is used solely to provide service features. We do not read, analyze, or use your personal entries for any other purpose.</p>
+  </div>
+
+  <!-- 03 -->
+  <div id="p3" class="s">
+    <h2><span class="n">03</span>How We Use Your Information</h2>
+    <p>We use the information we collect only for the following purposes.</p>
+    <ul>
+      <li>To provide, operate, maintain, and improve the Services</li>
+      <li>To create, authenticate, and manage user accounts</li>
+      <li>To process subscriptions and in-app purchases</li>
+      <li>To send push notifications and important service announcements</li>
+      <li>To respond to customer support requests</li>
+      <li>To detect errors, maintain security, and prevent fraud</li>
+      <li>To analyze aggregate usage statistics (in non-identifiable form)</li>
+    </ul>
+    <p>We do not use your information for marketing, advertising targeting, or profiling without your explicit consent.</p>
+  </div>
+
+  <!-- 04 -->
+  <div id="p4" class="s">
+    <h2><span class="n">04</span>Data Retention</h2>
+    <p>We retain personal data only as long as necessary for the purposes described in this policy. Once the purpose is fulfilled, data is promptly deleted, unless retention is required by applicable law.</p>
+    <table>
+      <thead><tr><th>Data</th><th>Retention Period</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td>Account information</td><td>Until account deletion</td><td>Service provision</td></tr>
+        <tr><td>Usage records</td><td>Up to 1 year</td><td>Service improvement</td></tr>
+        <tr><td>E-commerce transaction records</td><td>5 years</td><td>Korean E-Commerce Act, Art. 6</td></tr>
+        <tr><td>Consumer complaint &amp; dispute records</td><td>3 years</td><td>Korean E-Commerce Act, Art. 6</td></tr>
+        <tr><td>Access logs</td><td>3 months</td><td>Korean Communications Secrets Act</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 05 -->
+  <div id="p5" class="s">
+    <h2><span class="n">05</span>Third-Party Services &amp; Sub-processors</h2>
+    <p>We use the following third-party services to operate our products. Each provider processes only the minimum data necessary, under our instructions and applicable data processing agreements.</p>
+    <table>
+      <thead><tr><th>Service</th><th>Provider (Country)</th><th>Purpose</th><th>Data Processed</th><th>Privacy Policy</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Supabase</td>
+          <td>Supabase Inc. (US)</td>
+          <td>Database &amp; authentication backend</td>
+          <td>Email, user data, auth tokens</td>
+          <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>RevenueCat</td>
+          <td>RevenueCat Inc. (US)</td>
+          <td>Subscription &amp; in-app purchase management</td>
+          <td>Device ID, subscription status, purchase history</td>
+          <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>Firebase</td>
+          <td>Google LLC (US)</td>
+          <td>Push notifications (FCM)</td>
+          <td>Device push token</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>Apple Sign In</td>
+          <td>Apple Inc. (US)</td>
+          <td>Sign in with Apple</td>
+          <td>Email (optionally hidden by Apple)</td>
+          <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>Google Sign In</td>
+          <td>Google LLC (US)</td>
+          <td>Sign in with Google</td>
+          <td>Email, profile name</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>Kakao Login</td>
+          <td>Kakao Corp. (South Korea)</td>
+          <td>Sign in with Kakao</td>
+          <td>Email (if consented), nickname</td>
+          <td><a href="https://policy.kakao.com/privacy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+        <tr>
+          <td>Resend</td>
+          <td>Resend Inc. (US)</td>
+          <td>Transactional email delivery</td>
+          <td>Email address</td>
+          <td><a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">View →</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 06 -->
+  <div id="p6" class="s">
+    <h2><span class="n">06</span>International Data Transfers</h2>
+    <p>Some of the third-party services we use (including Supabase, Firebase, RevenueCat, Apple, Google, and Resend) operate servers in the United States. As a result, certain personal data may be processed on servers located outside your country of residence.</p>
+    <table>
+      <thead><tr><th>Destination</th><th>Data Transferred</th><th>Purpose</th><th>Safeguards</th></tr></thead>
+      <tbody>
+        <tr><td>United States</td><td>Email, device info, subscription info, user data</td><td>Service operation (storage, auth, payments, notifications, email)</td><td>Standard Contractual Clauses (SCC) and Data Processing Agreements (DPA) with each provider</td></tr>
+      </tbody>
+    </table>
+    <p>Each third-party provider complies with applicable international data protection frameworks including GDPR and CCPA. If you do not consent to international data transfer, some or all of the Services may not be available to you.</p>
+  </div>
+
+  <!-- 07 -->
+  <div id="p7" class="s">
+    <h2><span class="n">07</span>Third-Party Sharing</h2>
+    <p>We do not sell, rent, or share your personal information with third parties, except in the following cases.</p>
+    <ul>
+      <li>You have given explicit prior consent</li>
+      <li>Required by law or a valid request from a lawful authority</li>
+      <li>Necessary for sub-processors described in Section 05</li>
+    </ul>
+  </div>
+
+  <!-- 08 -->
+  <div id="p8" class="s">
+    <h2><span class="n">08</span>Your Rights</h2>
+    <p>You have the following rights regarding your personal data. To exercise any of these rights, please contact us at the address below. We will respond without undue delay.</p>
+    <ul>
+      <li><strong>Access</strong> — Request a copy of the personal data we hold about you</li>
+      <li><strong>Rectification</strong> — Request correction of inaccurate or incomplete data</li>
+      <li><strong>Erasure</strong> — Request deletion of your personal data ("right to be forgotten")</li>
+      <li><strong>Restriction</strong> — Request that we temporarily stop processing your data</li>
+      <li><strong>Data Portability</strong> — Receive your data in a machine-readable format</li>
+      <li><strong>Objection</strong> — Object to processing based on legitimate interests</li>
+    </ul>
+    <p>If you are located in South Korea and believe your rights have been violated, you may also file a complaint with the Personal Information Protection Commission (PIPC) at <a href="https://privacy.go.kr" target="_blank" rel="noopener" style="color:#3F5576;">privacy.go.kr</a>.</p>
+  </div>
+
+  <!-- 09 -->
+  <div id="p9" class="s">
+    <h2><span class="n">09</span>Account Deletion</h2>
+    <p>When you request account deletion, your personal data is deleted immediately in principle. In cases where server backup cycles or legal obligations require it, all data will be permanently deleted within 30 days.</p>
+    <ul>
+      <li>You can delete your account directly from Settings → Account → Delete Account in the app.</li>
+      <li>Data subject to legal retention obligations will be deleted after the required retention period ends.</li>
+      <li>Deleted data cannot be recovered. Please back up any content you wish to keep before deleting.</li>
+    </ul>
+    <div class="green-box">
+      <p>To delete your account: Settings → Account Management → Delete Account<br>Or email us at contact@titistudio.kr.</p>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div id="p10" class="s">
+    <h2><span class="n">10</span>Children's Privacy</h2>
+    <p>Our Services are not directed to children under the age of 14 (or 13 in jurisdictions where applicable). We do not knowingly collect personal information from children under this age.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at contact@titistudio.kr. We will take immediate steps to delete such information.</p>
+  </div>
+
+  <!-- 11 -->
+  <div id="p11" class="s">
+    <h2><span class="n">11</span>Cookies &amp; Tracking</h2>
+    <p>Our website (titistudio.kr) may use cookies or similar technologies to improve user experience. A cookie is a small text file stored in your browser.</p>
+    <ul>
+      <li><strong>Session cookies</strong> — Used for essential functions such as maintaining your login state.</li>
+      <li><strong>Analytics cookies</strong> — May be used to understand aggregate usage patterns. No individuals are identified.</li>
+    </ul>
+    <p>You can disable cookies in your browser settings, although some features may not work correctly as a result. Cookies do not apply to our mobile apps.</p>
+  </div>
+
+  <!-- 12 -->
+  <div id="p12" class="s">
+    <h2><span class="n">12</span>Security</h2>
+    <p>We take the security of your personal data seriously and implement the following technical and organizational measures.</p>
+    <ul>
+      <li>Encrypted data transmission (HTTPS / TLS)</li>
+      <li>Encrypted storage of passwords (hashing)</li>
+      <li>Principle of least-privilege access, with regular reviews</li>
+      <li>Data Processing Agreements (DPA) with all sub-processors</li>
+      <li>Access logging for systems that handle personal data</li>
+    </ul>
+    <p>As a one-person indie studio, the Privacy Officer handles all of the above responsibilities directly.</p>
+  </div>
+
+  <!-- 13 -->
+  <div id="p13" class="s">
+    <h2><span class="n">13</span>Contact &amp; Privacy Officer</h2>
+    <p>For any questions, requests, or complaints regarding this Privacy Policy or your personal data, please reach out to us. We aim to respond within 7 business days.</p>
+    <div class="cbox">
+      <p><strong>TITI STUDIO — Privacy Officer</strong></p>
+      <p>Email: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
+      <p>Website: <a href="https://titistudio.kr" target="_blank" rel="noopener">https://titistudio.kr</a></p>
+      <p>Response time: within 7 business days</p>
+    </div>
+    <p style="margin-top:20px;">If you are located in South Korea and wish to escalate, you may also contact the following authorities.</p>
+    <ul>
+      <li>Personal Information Protection Commission (PIPC): <a href="https://privacy.go.kr" target="_blank" rel="noopener" style="color:#3F5576;">privacy.go.kr</a></li>
+      <li>Korea Internet &amp; Security Agency (KISA): <a href="https://www.kisa.or.kr" target="_blank" rel="noopener" style="color:#3F5576;">kisa.or.kr</a></li>
+      <li>Cybercrime Report (Police): <a href="https://ecrm.police.go.kr" target="_blank" rel="noopener" style="color:#3F5576;">ecrm.police.go.kr</a></li>
+    </ul>
+  </div>
+
+  <footer class="doc-footer">
+    <a href="../index.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Home
+    </a>
+    <a href="../terms/">Terms of Use →</a>
+    <span class="brand">Think &amp; Try</span>
+  </footer>
+
+</div>
+</body>
+</html>
