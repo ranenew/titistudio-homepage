@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>에피소드 - 계정 삭제 안내 — TiTi Studio</title>
+  <meta name="description" content="Episode 앱 계정 삭제 방법 및 삭제되는 데이터 안내. Google Play 정책에 따른 계정 삭제 가이드입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.8; }
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 80px 40px 120px; }
+    .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 12px; }
+    .back-btn { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: #7A7A7A; transition: color 0.18s; }
+    .back-btn:hover { color: #3F5576; }
+    .lang-switch { display: flex; align-items: center; }
+    .lang-a { font-size: 12px; color: #ADADAD; text-decoration: none; transition: color 0.18s; padding: 2px 0; }
+    .lang-a:hover { color: #3F5576; }
+    .lang-a.active { font-weight: 600; color: #3F5576; }
+    .lang-sep { color: #D8D3C4; font-size: 11px; padding: 0 7px; user-select: none; }
+    .doc-label { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #3F5576; opacity: 0.75; margin-bottom: 14px; }
+    .doc-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 5vw, 44px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
+    .doc-subtitle { font-size: 15px; color: #7A7A7A; margin: 0 0 8px; }
+    .doc-updated { font-size: 13px; color: #ADADAD; margin: 0 0 48px; }
+    hr { border: none; border-top: 1px solid #E5E0D5; margin: 0 0 48px; }
+    .s { margin-bottom: 48px; }
+    .s h2 { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; }
+    .s p { font-size: 15px; line-height: 1.85; color: #5A5A5A; margin: 0 0 14px; word-break: keep-all; }
+    .s p:last-child { margin-bottom: 0; }
+    .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; word-break: keep-all; }
+    .card { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
+    .card h2 { margin-top: 0; }
+    .blue-box { background: #EDF1F7; border-left: 3px solid #3F5576; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .blue-box p { font-size: 14px; color: #3F5576; font-weight: 500; margin: 0; word-break: keep-all; line-height: 1.75; }
+    .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .green-box p { font-size: 14px; color: #5A7A40; font-weight: 500; margin: 0; word-break: keep-all; line-height: 1.75; }
+    .cbox { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
+    .cbox p { font-size: 14px; color: #7A7A7A; margin: 0 0 8px; }
+    .cbox p:last-child { margin-bottom: 0; }
+    .cbox a { color: #3F5576; text-decoration: none; font-weight: 500; }
+    .cbox a:hover { text-decoration: underline; }
+    .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
+    .doc-footer a:hover { color: #3F5576; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
+    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } }
+  </style>
+
+<template id="__bundler_thumbnail" data-bg-color="#FEFCF8">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#FEFCF8"/>
+    <rect x="366" y="232" width="68" height="68" rx="16" fill="#3F5576"/>
+    <text x="400" y="276" font-family="Georgia,serif" font-size="22" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">TT</text>
+    <text x="400" y="322" font-family="Georgia,serif" font-size="15" font-weight="500" fill="#2D2D2D" text-anchor="middle" letter-spacing="-0.3">계정 삭제 안내</text>
+  </svg>
+</template>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <a href="../TiTi Studio.dc.html" class="back-btn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      홈으로 돌아가기
+    </a>
+    <div class="lang-switch">
+      <span class="lang-a active">한국어</span>
+      <span class="lang-sep">|</span>
+      <a href="en.html" class="lang-a">English</a>
+    </div>
+  </div>
+
+  <p class="doc-label">Episode · Account</p>
+  <h1 class="doc-title">에피소드 계정 삭제 안내</h1>
+  <p class="doc-subtitle">Episode - Account Deletion</p>
+  <p class="doc-updated">최종 수정일: 2026년 7월 16일</p>
+  <hr>
+
+  <div class="card">
+    <h2>계정 삭제 방법</h2>
+    <p>사용자는 앱 내 <strong>설정 &gt; 회원 탈퇴</strong> 메뉴를 통해 언제든지 계정을 삭제할 수 있습니다.</p>
+  </div>
+
+  <div class="s">
+    <h2>삭제되는 정보</h2>
+    <p>계정 삭제 시 다음 정보가 함께 삭제됩니다.</p>
+    <ul>
+      <li>사용자 계정 정보</li>
+      <li>이메일 주소</li>
+      <li>웹소설 감상 기록</li>
+      <li>감정 분석 결과 및 통계 데이터</li>
+      <li>사용자 설정 정보</li>
+      <li>앱 내 저장된 개인 데이터</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2>구독 관련 안내</h2>
+    <ul>
+      <li>Google Play 및 Apple App Store를 통한 구독은 각 스토어에서 별도로 관리됩니다.</li>
+      <li>계정 삭제만으로 구독이 자동 해지되지 않습니다.</li>
+      <li>프리미엄 구독을 해지하려면 각 스토어의 구독 관리 메뉴에서 직접 해지해야 합니다.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2>데이터 보관 정책</h2>
+    <ul>
+      <li>회원 탈퇴 요청 시 사용자 데이터 삭제가 즉시 진행됩니다.</li>
+      <li>관련 법령에 따라 보관이 필요한 정보가 있는 경우 법정 보관 기간 동안 별도로 보관 후 안전하게 삭제됩니다.</li>
+    </ul>
+    <div class="green-box">
+      <p>삭제된 데이터는 복구되지 않습니다. 필요한 기록은 삭제 전 미리 백업해 주세요.</p>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2>문의</h2>
+    <p>계정 삭제와 관련하여 문의가 필요한 경우 아래로 연락해 주세요.</p>
+    <div class="cbox">
+      <p>Episode by TiTi Studio</p>
+      <p>이메일: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
+      <p>처리 기간: 영업일 기준 7일 이내</p>
+    </div>
+  </div>
+
+  <footer class="doc-footer">
+    <a href="../TiTi Studio.dc.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      홈으로 돌아가기
+    </a>
+    <a href="../privacy/ko.html">개인정보처리방침 →</a>
+    <span class="brand">Think &amp; Try</span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Episode - Account Deletion — TiTi Studio</title>
+  <meta name="description" content="How to delete your Episode account and what data is removed. Account deletion guide per Google Play policy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: 'DM Sans', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.8; }
+    .page-wrap { max-width: 720px; margin: 0 auto; padding: 80px 40px 120px; }
+    .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 12px; }
+    .back-btn { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: #7A7A7A; transition: color 0.18s; }
+    .back-btn:hover { color: #3F5576; }
+    .lang-switch { display: flex; align-items: center; }
+    .lang-a { font-size: 12px; color: #ADADAD; text-decoration: none; transition: color 0.18s; padding: 2px 0; }
+    .lang-a:hover { color: #3F5576; }
+    .lang-a.active { font-weight: 600; color: #3F5576; }
+    .lang-sep { color: #D8D3C4; font-size: 11px; padding: 0 7px; user-select: none; }
+    .doc-label { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #3F5576; opacity: 0.75; margin-bottom: 14px; }
+    .doc-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 5vw, 44px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
+    .doc-subtitle { font-size: 15px; color: #7A7A7A; margin: 0 0 8px; }
+    .doc-updated { font-size: 13px; color: #ADADAD; margin: 0 0 48px; }
+    hr { border: none; border-top: 1px solid #E5E0D5; margin: 0 0 48px; }
+    .s { margin-bottom: 48px; }
+    .s h2 { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; }
+    .s p { font-size: 15px; line-height: 1.85; color: #5A5A5A; margin: 0 0 14px; }
+    .s p:last-child { margin-bottom: 0; }
+    .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; }
+    .card { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
+    .card h2 { margin-top: 0; }
+    .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .green-box p { font-size: 14px; color: #5A7A40; font-weight: 500; margin: 0; line-height: 1.75; }
+    .cbox { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
+    .cbox p { font-size: 14px; color: #7A7A7A; margin: 0 0 8px; }
+    .cbox p:last-child { margin-bottom: 0; }
+    .cbox a { color: #3F5576; text-decoration: none; font-weight: 500; }
+    .cbox a:hover { text-decoration: underline; }
+    .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
+    .doc-footer a:hover { color: #3F5576; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
+    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } }
+  </style>
+
+<template id="__bundler_thumbnail" data-bg-color="#FEFCF8">
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#FEFCF8"/>
+    <rect x="366" y="232" width="68" height="68" rx="16" fill="#3F5576"/>
+    <text x="400" y="276" font-family="Georgia,serif" font-size="22" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">TT</text>
+    <text x="400" y="322" font-family="Georgia,serif" font-size="15" font-weight="500" fill="#2D2D2D" text-anchor="middle" letter-spacing="-0.3">Account Deletion</text>
+  </svg>
+</template>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="top-bar">
+    <a href="../TiTi Studio.dc.html" class="back-btn">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Home
+    </a>
+    <div class="lang-switch">
+      <a href="ko.html" class="lang-a">한국어</a>
+      <span class="lang-sep">|</span>
+      <span class="lang-a active">English</span>
+    </div>
+  </div>
+
+  <p class="doc-label">Episode · Account</p>
+  <h1 class="doc-title">Account Deletion</h1>
+  <p class="doc-subtitle">에피소드 계정 삭제 안내</p>
+  <p class="doc-updated">Last updated: July 16, 2026</p>
+  <hr>
+
+  <div class="card">
+    <h2>How to Delete Your Account</h2>
+    <p>You can delete your account at any time from <strong>Settings &gt; Delete Account</strong> within the app.</p>
+  </div>
+
+  <div class="s">
+    <h2>Information That Will Be Deleted</h2>
+    <p>Deleting your account permanently removes the following data.</p>
+    <ul>
+      <li>Account information</li>
+      <li>Email address</li>
+      <li>Reading and reflection records for web novels</li>
+      <li>Emotion analysis results and statistics</li>
+      <li>User settings</li>
+      <li>Any other personal data stored in the app</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2>About Subscriptions</h2>
+    <ul>
+      <li>Subscriptions purchased through Google Play or the Apple App Store are managed separately by each platform.</li>
+      <li>Deleting your account does not automatically cancel your subscription.</li>
+      <li>To cancel a premium subscription, please cancel it directly from the subscription management menu of the respective store.</li>
+    </ul>
+  </div>
+
+  <div class="s">
+    <h2>Data Retention Policy</h2>
+    <ul>
+      <li>Your data is deleted immediately upon account deletion request.</li>
+      <li>If certain information must be retained under applicable law, it will be securely retained for the legally required period and then deleted.</li>
+    </ul>
+    <div class="green-box">
+      <p>Deleted data cannot be recovered. Please back up any important records before deleting your account.</p>
+    </div>
+  </div>
+
+  <div class="s">
+    <h2>Contact</h2>
+    <p>If you have any questions about account deletion, please reach out to us.</p>
+    <div class="cbox">
+      <p>Episode by TiTi Studio</p>
+      <p>Email: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
+      <p>Response time: within 7 business days</p>
+    </div>
+  </div>
+
+  <footer class="doc-footer">
+    <a href="../TiTi Studio.dc.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Home
+    </a>
+    <a href="../privacy/en.html">Privacy Policy →</a>
+    <span class="brand">Think &amp; Try</span>
+  </footer>
+
+</div>
+</body>
+</html>

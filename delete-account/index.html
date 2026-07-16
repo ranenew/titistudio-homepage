@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Deletion — TiTi Studio</title>
+  <script>
+    (function () {
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      window.location.replace(lang.startsWith('ko') ? 'ko.html' : 'en.html');
+    })();
+  </script>
+  <style>
+    body { margin: 0; background: #FEFCF8; font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .box { text-align: center; padding: 40px; }
+    a { color: #3F5576; font-size: 15px; text-decoration: none; margin: 0 12px; }
+    a:hover { text-decoration: underline; }
+    p { color: #ADADAD; font-size: 13px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div class="box">
+      <p>Please select your language:</p>
+      <a href="ko.html">한국어</a>
+      <a href="en.html">English</a>
+    </div>
+  </noscript>
+</body>
+</html>
