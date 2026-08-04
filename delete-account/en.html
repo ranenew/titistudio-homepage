@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Episode - Account Deletion — TiTi Studio</title>
-  <meta name="description" content="How to delete your Episode account and what data is removed. Account deletion guide per Google Play policy.">
+  <title>Account Deletion — TiTi Studio</title>
+  <meta name="description" content="How to delete your account for Episode, Modam Budget, Money Synapse, and Time Synapse, and what data is removed. Account deletion guide per Google Play policy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -32,10 +32,36 @@
     .s p:last-child { margin-bottom: 0; }
     .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
     .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; }
+
+    /* How to delete — emphasized card */
+    .method-card { background: linear-gradient(135deg, #3F5576, #4C6288); color: #fff; border-radius: 16px; padding: 40px 36px; margin-bottom: 14px; box-shadow: 0 10px 28px rgba(63,85,118,0.22); }
+    .method-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .method-card h2 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: #fff; margin: 0 0 14px; }
+    .method-card p { font-size: 16.5px; line-height: 1.85; color: rgba(255,255,255,0.94); margin: 0; }
+    .method-card strong { color: #F4CD7A; font-weight: 600; }
+    .method-note { font-size: 12.5px; color: #ADADAD; margin: 0 0 48px; padding-left: 2px; }
+
+    /* Data removed — per-app accordion */
+    .app-acc { background: white; border: 1px solid #E5E0D5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    .app-acc summary { list-style: none; cursor: pointer; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .app-acc summary::-webkit-details-marker { display: none; }
+    .app-acc summary:focus-visible { outline: 2px solid #3F5576; outline-offset: -2px; }
+    .app-name-wrap { display: flex; align-items: baseline; gap: 9px; }
+    .app-name { font-size: 15.5px; font-weight: 600; color: #1E1E1E; }
+    .app-tag { font-size: 11.5px; color: #8B8B8B; font-weight: 400; }
+    .chev { color: #ADADAD; flex-shrink: 0; transition: transform 0.2s ease; }
+    .app-acc[open] .chev { transform: rotate(180deg); }
+    .acc-body { padding: 0 22px 20px; }
+    .acc-body p { font-size: 13.5px; color: #8B8B8B; margin: 0 0 10px; }
+    .acc-body ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .acc-body li { font-size: 14px; line-height: 1.75; color: #5A5A5A; }
+
     .card { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
     .card h2 { margin-top: 0; }
     .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .green-box.warn { background: #FBF0E3; border-left-color: #C98A3E; }
     .green-box p { font-size: 14px; color: #5A7A40; font-weight: 500; margin: 0; line-height: 1.75; }
+    .green-box.warn p { color: #9A5F1F; }
     .cbox { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
     .cbox p { font-size: 14px; color: #7A7A7A; margin: 0 0 8px; }
     .cbox p:last-child { margin-bottom: 0; }
@@ -45,7 +71,7 @@
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
     .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
-    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } }
+    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } .method-card { padding: 30px 24px; } }
   </style>
 
 <template id="__bundler_thumbnail" data-bg-color="#FEFCF8">
@@ -72,28 +98,97 @@
     </div>
   </div>
 
-  <p class="doc-label">Episode · Account</p>
+  <p class="doc-label">TiTi Studio · Account</p>
   <h1 class="doc-title">Account Deletion</h1>
-  <p class="doc-subtitle">에피소드 계정 삭제 안내</p>
-  <p class="doc-updated">Last updated: July 16, 2026</p>
+  <p class="doc-subtitle">티티스튜디오 계정 삭제 안내</p>
+  <p class="doc-updated">Last updated: August 4, 2026</p>
   <hr>
 
-  <div class="card">
+  <div class="method-card">
+    <div class="method-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M8 5V3.5A1.5 1.5 0 0 1 9.5 2h1A1.5 1.5 0 0 1 12 3.5V5m-6 0v11.5A1.5 1.5 0 0 0 7.5 18h5a1.5 1.5 0 0 0 1.5-1.5V5m-7 4v5m4-5v5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
     <h2>How to Delete Your Account</h2>
-    <p>You can delete your account at any time from <strong>Settings &gt; Delete Account</strong> within the app.</p>
+    <p>Open the app and go to <strong>Settings &gt; Delete Account</strong> — you can delete your account yourself at any time.</p>
   </div>
+  <p class="method-note">Episode, Modam Budget, Money Synapse, Time Synapse, and every other TiTi Studio app follow this same account deletion process.</p>
 
   <div class="s">
     <h2>Information That Will Be Deleted</h2>
-    <p>Deleting your account permanently removes the following data.</p>
-    <ul>
-      <li>Account information</li>
-      <li>Email address</li>
-      <li>Reading and reflection records for web novels</li>
-      <li>Emotion analysis results and statistics</li>
-      <li>User settings</li>
-      <li>Any other personal data stored in the app</li>
-    </ul>
+    <p>What gets deleted depends on which app you use. Select an app below to see its details.</p>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Episode</span><span class="app-tag">Web novels</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Account information</li>
+          <li>Email address</li>
+          <li>Reading history for web novels</li>
+          <li>Emotion analysis results and statistics</li>
+          <li>User settings</li>
+          <li>Any other personal data stored in the app</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Modam Budget</span><span class="app-tag">Budgeting</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Account information and email address</li>
+          <li>Income and expense records</li>
+          <li>Wish list (items you want to buy)</li>
+          <li>Savings goals and savings records</li>
+          <li>Statistics and analytics data</li>
+          <li>User settings stored in the app</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Money Synapse</span><span class="app-tag">Full finance suite</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <p>Money Synapse covers a wide range of finance features, so all of the following data is deleted together.</p>
+        <ul>
+          <li>Account information and email address</li>
+          <li>Budget data</li>
+          <li>Finance data</li>
+          <li>Savings data</li>
+          <li>Investment and Investment Pro data</li>
+          <li>Loan data</li>
+          <li>Insurance policy data</li>
+          <li>Wish list data</li>
+          <li>Conversation history with the AI assistant "Moa"</li>
+          <li>Statistics and analytics data</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Time Synapse</span><span class="app-tag">Time management</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Account information and email address</li>
+          <li>Plans and schedule data you've created</li>
+          <li>Retrospective records</li>
+          <li>Goal-setting data</li>
+          <li>Statistics and analytics data</li>
+          <li>User settings stored in the app</li>
+        </ul>
+      </div>
+    </details>
   </div>
 
   <div class="s">
@@ -106,12 +201,13 @@
   </div>
 
   <div class="s">
-    <h2>Data Retention Policy</h2>
+    <h2>Important Notes</h2>
     <ul>
       <li>Your data is deleted immediately upon account deletion request.</li>
       <li>If certain information must be retained under applicable law, it will be securely retained for the legally required period and then deleted.</li>
+      <li>Once deletion is complete, you cannot log back in with the same account — to use the app again, you'll need to sign up for a new one.</li>
     </ul>
-    <div class="green-box">
+    <div class="green-box warn">
       <p>Deleted data cannot be recovered. Please back up any important records before deleting your account.</p>
     </div>
   </div>
@@ -120,7 +216,7 @@
     <h2>Contact</h2>
     <p>If you have any questions about account deletion, please reach out to us.</p>
     <div class="cbox">
-      <p>Episode by TiTi Studio</p>
+      <p>TiTi Studio</p>
       <p>Email: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
       <p>Response time: within 7 business days</p>
     </div>

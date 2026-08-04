@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>에피소드 - 계정 삭제 안내 — TiTi Studio</title>
-  <meta name="description" content="Episode 앱 계정 삭제 방법 및 삭제되는 데이터 안내. Google Play 정책에 따른 계정 삭제 가이드입니다.">
+  <title>티티스튜디오 계정 삭제 안내 — TiTi Studio</title>
+  <meta name="description" content="에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 티티스튜디오 앱의 계정 삭제 방법 및 삭제되는 데이터 안내. Google Play 정책에 따른 계정 삭제 가이드입니다.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
@@ -33,12 +33,36 @@
     .s p:last-child { margin-bottom: 0; }
     .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
     .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; word-break: keep-all; }
+
+    /* 계정 삭제 방법 — 강조 카드 */
+    .method-card { background: linear-gradient(135deg, #3F5576, #4C6288); color: #fff; border-radius: 16px; padding: 40px 36px; margin-bottom: 14px; box-shadow: 0 10px 28px rgba(63,85,118,0.22); }
+    .method-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .method-card h2 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: #fff; margin: 0 0 14px; }
+    .method-card p { font-size: 16.5px; line-height: 1.85; color: rgba(255,255,255,0.94); margin: 0; word-break: keep-all; }
+    .method-card strong { color: #F4CD7A; font-weight: 600; }
+    .method-note { font-size: 12.5px; color: #ADADAD; margin: 0 0 48px; padding-left: 2px; word-break: keep-all; }
+
+    /* 삭제되는 정보 — 앱별 아코디언 */
+    .app-acc { background: white; border: 1px solid #E5E0D5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    .app-acc summary { list-style: none; cursor: pointer; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .app-acc summary::-webkit-details-marker { display: none; }
+    .app-acc summary:focus-visible { outline: 2px solid #3F5576; outline-offset: -2px; }
+    .app-name-wrap { display: flex; align-items: baseline; gap: 9px; }
+    .app-name { font-size: 15.5px; font-weight: 600; color: #1E1E1E; }
+    .app-tag { font-size: 11.5px; color: #8B8B8B; font-weight: 400; }
+    .chev { color: #ADADAD; flex-shrink: 0; transition: transform 0.2s ease; }
+    .app-acc[open] .chev { transform: rotate(180deg); }
+    .acc-body { padding: 0 22px 20px; }
+    .acc-body p { font-size: 13.5px; color: #8B8B8B; margin: 0 0 10px; word-break: keep-all; }
+    .acc-body ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .acc-body li { font-size: 14px; line-height: 1.75; color: #5A5A5A; word-break: keep-all; }
+
     .card { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-bottom: 48px; }
     .card h2 { margin-top: 0; }
-    .blue-box { background: #EDF1F7; border-left: 3px solid #3F5576; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
-    .blue-box p { font-size: 14px; color: #3F5576; font-weight: 500; margin: 0; word-break: keep-all; line-height: 1.75; }
-    .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; }
+    .green-box { background: #EDF5E8; border-left: 3px solid #8FAF6A; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 14px 0; display: flex; gap: 10px; align-items: flex-start; }
+    .green-box.warn { background: #FBF0E3; border-left-color: #C98A3E; }
     .green-box p { font-size: 14px; color: #5A7A40; font-weight: 500; margin: 0; word-break: keep-all; line-height: 1.75; }
+    .green-box.warn p { color: #9A5F1F; }
     .cbox { background: white; border: 1px solid #E5E0D5; border-radius: 12px; padding: 24px 28px; margin-top: 16px; }
     .cbox p { font-size: 14px; color: #7A7A7A; margin: 0 0 8px; }
     .cbox p:last-child { margin-bottom: 0; }
@@ -48,7 +72,7 @@
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
     .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
-    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } }
+    @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } .method-card { padding: 30px 24px; } }
   </style>
 
 <template id="__bundler_thumbnail" data-bg-color="#FEFCF8">
@@ -75,28 +99,97 @@
     </div>
   </div>
 
-  <p class="doc-label">Episode · Account</p>
-  <h1 class="doc-title">에피소드 계정 삭제 안내</h1>
-  <p class="doc-subtitle">Episode - Account Deletion</p>
-  <p class="doc-updated">최종 수정일: 2026년 7월 16일</p>
+  <p class="doc-label">TiTi Studio · Account</p>
+  <h1 class="doc-title">티티스튜디오 계정 삭제 안내</h1>
+  <p class="doc-subtitle">TiTi Studio - Account Deletion</p>
+  <p class="doc-updated">최종 수정일: 2026년 8월 4일</p>
   <hr>
 
-  <div class="card">
+  <div class="method-card">
+    <div class="method-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M8 5V3.5A1.5 1.5 0 0 1 9.5 2h1A1.5 1.5 0 0 1 12 3.5V5m-6 0v11.5A1.5 1.5 0 0 0 7.5 18h5a1.5 1.5 0 0 0 1.5-1.5V5m-7 4v5m4-5v5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
     <h2>계정 삭제 방법</h2>
-    <p>사용자는 앱 내 <strong>설정 &gt; 회원 탈퇴</strong> 메뉴를 통해 언제든지 계정을 삭제할 수 있습니다.</p>
+    <p>앱을 실행한 뒤 <strong>설정 &gt; 회원 탈퇴</strong> 메뉴로 들어가면, 언제든지 직접 계정을 삭제할 수 있습니다.</p>
   </div>
+  <p class="method-note">에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 티티스튜디오의 모든 앱은 위와 동일한 방식으로 계정을 삭제할 수 있습니다.</p>
 
   <div class="s">
     <h2>삭제되는 정보</h2>
-    <p>계정 삭제 시 다음 정보가 함께 삭제됩니다.</p>
-    <ul>
-      <li>사용자 계정 정보</li>
-      <li>이메일 주소</li>
-      <li>웹소설 감상 기록</li>
-      <li>감정 분석 결과 및 통계 데이터</li>
-      <li>사용자 설정 정보</li>
-      <li>앱 내 저장된 개인 데이터</li>
-    </ul>
+    <p>계정 삭제 시 삭제되는 정보는 이용 중인 앱에 따라 다릅니다. 아래에서 이용 중인 앱을 눌러 확인해 주세요.</p>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">에피소드</span><span class="app-tag">Episode · 웹소설</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>사용자 계정 정보</li>
+          <li>이메일 주소</li>
+          <li>웹소설 감상 기록</li>
+          <li>감정 분석 결과 및 통계 데이터</li>
+          <li>사용자 설정 정보</li>
+          <li>앱 내 저장된 개인 데이터</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">모담 가계부</span><span class="app-tag">가계부</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>사용자 계정 정보 및 이메일 주소</li>
+          <li>수입·지출 등 가계부 기록</li>
+          <li>위시(사고 싶은 항목) 데이터</li>
+          <li>저축 목표 및 저축 기록</li>
+          <li>통계 및 분석 데이터</li>
+          <li>앱 내 저장된 개인 설정</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">머니 시냅스</span><span class="app-tag">종합 자산관리</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <p>머니 시냅스는 다양한 자산관리 기능을 제공하는 만큼, 아래 모든 데이터가 함께 삭제됩니다.</p>
+        <ul>
+          <li>사용자 계정 정보 및 이메일 주소</li>
+          <li>예산 데이터</li>
+          <li>금융 데이터</li>
+          <li>저축 데이터</li>
+          <li>투자 및 투자Pro 데이터</li>
+          <li>대출 데이터</li>
+          <li>보험 소유 데이터</li>
+          <li>위시 데이터</li>
+          <li>AI 비서 '모아'와의 대화 기록</li>
+          <li>통계 및 분석 데이터</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">타임 시냅스</span><span class="app-tag">시간관리</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>사용자 계정 정보 및 이메일 주소</li>
+          <li>작성한 계획 및 일정 데이터</li>
+          <li>회고 기록</li>
+          <li>목표 설정 데이터</li>
+          <li>통계 및 분석 데이터</li>
+          <li>앱 내 저장된 개인 설정</li>
+        </ul>
+      </div>
+    </details>
   </div>
 
   <div class="s">
@@ -109,12 +202,13 @@
   </div>
 
   <div class="s">
-    <h2>데이터 보관 정책</h2>
+    <h2>주의사항</h2>
     <ul>
       <li>회원 탈퇴 요청 시 사용자 데이터 삭제가 즉시 진행됩니다.</li>
-      <li>관련 법령에 따라 보관이 필요한 정보가 있는 경우 법정 보관 기간 동안 별도로 보관 후 안전하게 삭제됩니다.</li>
+      <li>관련 법령에 따라 보관이 필요한 정보가 있는 경우, 법정 보관 기간 동안 안전하게 별도 보관된 후 삭제됩니다.</li>
+      <li>탈퇴가 완료되면 동일한 계정으로 다시 로그인할 수 없으며, 다시 이용하시려면 새로운 계정으로 가입해야 합니다.</li>
     </ul>
-    <div class="green-box">
+    <div class="green-box warn">
       <p>삭제된 데이터는 복구되지 않습니다. 필요한 기록은 삭제 전 미리 백업해 주세요.</p>
     </div>
   </div>
@@ -123,7 +217,7 @@
     <h2>문의</h2>
     <p>계정 삭제와 관련하여 문의가 필요한 경우 아래로 연락해 주세요.</p>
     <div class="cbox">
-      <p>Episode by TiTi Studio</p>
+      <p>TiTi Studio</p>
       <p>이메일: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
       <p>처리 기간: 영업일 기준 7일 이내</p>
     </div>

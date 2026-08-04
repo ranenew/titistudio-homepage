@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>개인정보처리방침 — TiTi Studio</title>
-  <meta name="description" content="TiTi Studio의 개인정보처리방침입니다. Episode, 머니시냅스, ARTy 등 모든 TiTi Studio 서비스에 공통 적용됩니다.">
+  <meta name="description" content="TiTi Studio의 개인정보처리방침입니다. 에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 모든 TiTi Studio 서비스에 공통 적용됩니다.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
@@ -58,6 +58,18 @@
     .cbox a { color: #3F5576; text-decoration: none; font-weight: 500; }
     .cbox a:hover { text-decoration: underline; }
     .op-table td:first-child { font-weight: 500; color: #3A3A3A; white-space: nowrap; width: 36%; }
+    .app-acc { background: white; border: 1px solid #E5E0D5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    .app-acc summary { list-style: none; cursor: pointer; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .app-acc summary::-webkit-details-marker { display: none; }
+    .app-acc summary:focus-visible { outline: 2px solid #3F5576; outline-offset: -2px; }
+    .app-name-wrap { display: flex; align-items: baseline; gap: 9px; }
+    .app-name { font-size: 15px; font-weight: 600; color: #1E1E1E; }
+    .app-tag { font-size: 11.5px; color: #8B8B8B; font-weight: 400; }
+    .chev { color: #ADADAD; flex-shrink: 0; transition: transform 0.2s ease; }
+    .app-acc[open] .chev { transform: rotate(180deg); }
+    .acc-body { padding: 0 20px 18px; }
+    .acc-body ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .acc-body li { font-size: 14px; line-height: 1.75; color: #5A5A5A; word-break: keep-all; }
     .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
@@ -90,13 +102,13 @@
   <h1 class="doc-title">개인정보처리방침</h1>
   <p class="doc-subtitle">Privacy Policy</p>
   <div class="doc-meta">
-    <span><strong>최종 수정일:</strong> 2026년 7월 6일</span>
+    <span><strong>최종 수정일:</strong> 2026년 8월 4일</span>
     <span><strong>시행일:</strong> 2026년 7월 6일</span>
   </div>
   <hr>
 
   <div class="notice">
-    <p>본 개인정보처리방침은 TITI STUDIO가 제공하는 모든 애플리케이션 및 웹서비스(Episode, 머니시냅스, ARTy 및 향후 출시되는 서비스)에 공통으로 적용됩니다.</p>
+    <p>본 개인정보처리방침은 TITI STUDIO가 제공하는 모든 애플리케이션 및 웹서비스(에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 및 향후 출시되는 서비스)에 공통으로 적용됩니다.</p>
   </div>
 
   <nav class="toc">
@@ -137,7 +149,7 @@
   <!-- 02 -->
   <div id="p2" class="s">
     <h2><span class="n">02</span>수집하는 개인정보</h2>
-    <p>당사는 서비스 제공을 위해 필요한 최소한의 정보만 수집합니다.</p>
+    <p>당사는 서비스 제공을 위해 필요한 최소한의 정보만 수집합니다. 아래는 이용 중인 앱과 관계없이 공통으로 수집되는 항목입니다.</p>
     <table>
       <thead><tr><th>구분</th><th>수집 항목</th><th>수집 방법</th></tr></thead>
       <tbody>
@@ -146,10 +158,77 @@
         <tr><td>서비스 이용 기록</td><td>앱 기능 사용 이력, 오류 로그</td><td>서비스 이용 중 자동 수집</td></tr>
         <tr><td>기기 정보</td><td>기기 모델, OS 버전, 앱 버전, 기기 식별자(푸시 알림용)</td><td>서비스 이용 중 자동 수집</td></tr>
         <tr><td>구독 및 결제 정보</td><td>구독 상태, 구독 ID (결제 세부 정보는 앱스토어/구글플레이에서 처리)</td><td>구독 시</td></tr>
-        <tr><td>사용자 입력 콘텐츠</td><td>메모, 일기 기록, 태그, 감정 등 앱 내 직접 입력 데이터</td><td>사용자 직접 입력</td></tr>
       </tbody>
     </table>
-    <p>사용자가 직접 작성한 콘텐츠는 서비스 기능 제공 이외의 목적으로 열람하거나 활용하지 않습니다.</p>
+
+    <h3>앱별 수집 항목 (사용자 입력 콘텐츠)</h3>
+    <p>이용 중인 앱에 따라 아래와 같은 사용자 입력 콘텐츠가 추가로 수집됩니다. 이용 중인 앱을 눌러 확인해 주세요.</p>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">에피소드</span><span class="app-tag">Episode · 웹소설</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>웹소설 감상 기록</li>
+          <li>감정 분석 결과 및 통계 데이터</li>
+          <li>사용자 설정 정보</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">모담 가계부</span><span class="app-tag">가계부</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>수입·지출 등 가계부 기록</li>
+          <li>위시(사고 싶은 항목) 데이터</li>
+          <li>저축 목표 및 저축 기록</li>
+          <li>통계 및 분석 데이터</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">머니 시냅스</span><span class="app-tag">종합 자산관리</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>예산 데이터</li>
+          <li>금융 데이터</li>
+          <li>저축 데이터</li>
+          <li>투자 및 투자Pro 데이터</li>
+          <li>대출 데이터</li>
+          <li>보험 소유 데이터</li>
+          <li>위시 데이터</li>
+          <li>AI 비서 '모아'와의 대화 기록</li>
+          <li>통계 및 분석 데이터</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">타임 시냅스</span><span class="app-tag">시간관리</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>작성한 계획 및 일정 데이터</li>
+          <li>회고 기록</li>
+          <li>목표 설정 데이터</li>
+          <li>통계 및 분석 데이터</li>
+        </ul>
+      </div>
+    </details>
+
+    <p style="margin-top:14px;">사용자가 직접 작성한 콘텐츠는 서비스 기능 제공 이외의 목적으로 열람하거나 활용하지 않습니다.</p>
   </div>
 
   <!-- 03 -->

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — TiTi Studio</title>
-  <meta name="description" content="Privacy Policy for all TiTi Studio apps and services including Episode, Money Synapse, and ARTy.">
+  <meta name="description" content="Privacy Policy for all TiTi Studio apps and services including Episode, Modam Budget, Money Synapse, and Time Synapse.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -42,6 +42,7 @@
     .s p:last-child { margin-bottom: 0; }
     .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
     .s li { font-size: 15px; line-height: 1.8; color: #5A5A5A; }
+    .s h3 { font-size: 15px; font-weight: 600; color: #3A3A3A; margin: 24px 0 10px; }
     table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
     th { background: #F4F1EC; font-weight: 500; color: #3A3A3A; padding: 10px 14px; text-align: left; border: 1px solid #E5E0D5; white-space: nowrap; }
     td { padding: 10px 14px; border: 1px solid #E5E0D5; color: #5A5A5A; vertical-align: top; line-height: 1.65; }
@@ -56,6 +57,18 @@
     .cbox a { color: #3F5576; text-decoration: none; font-weight: 500; }
     .cbox a:hover { text-decoration: underline; }
     .op-table td:first-child { font-weight: 500; color: #3A3A3A; white-space: nowrap; width: 36%; }
+    .app-acc { background: white; border: 1px solid #E5E0D5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    .app-acc summary { list-style: none; cursor: pointer; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .app-acc summary::-webkit-details-marker { display: none; }
+    .app-acc summary:focus-visible { outline: 2px solid #3F5576; outline-offset: -2px; }
+    .app-name-wrap { display: flex; align-items: baseline; gap: 9px; }
+    .app-name { font-size: 15px; font-weight: 600; color: #1E1E1E; }
+    .app-tag { font-size: 11.5px; color: #8B8B8B; font-weight: 400; }
+    .chev { color: #ADADAD; flex-shrink: 0; transition: transform 0.2s ease; }
+    .app-acc[open] .chev { transform: rotate(180deg); }
+    .acc-body { padding: 0 20px 18px; }
+    .acc-body ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+    .acc-body li { font-size: 14px; line-height: 1.75; color: #5A5A5A; }
     .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
@@ -88,13 +101,13 @@
   <h1 class="doc-title">Privacy Policy</h1>
   <p class="doc-subtitle">개인정보처리방침</p>
   <div class="doc-meta">
-    <span><strong>Last updated:</strong> July 6, 2026</span>
+    <span><strong>Last updated:</strong> August 4, 2026</span>
     <span><strong>Effective date:</strong> July 6, 2026</span>
   </div>
   <hr>
 
   <div class="notice">
-    <p>This Privacy Policy applies to all applications and web services provided by TITI STUDIO, including Episode, Money Synapse, ARTy, and any future services.</p>
+    <p>This Privacy Policy applies to all applications and web services provided by TITI STUDIO, including Episode, Modam Budget, Money Synapse, Time Synapse, and any future services.</p>
   </div>
 
   <nav class="toc">
@@ -135,7 +148,7 @@
   <!-- 02 -->
   <div id="p2" class="s">
     <h2><span class="n">02</span>Information We Collect</h2>
-    <p>We collect only the minimum information necessary to provide our Services.</p>
+    <p>We collect only the minimum information necessary to provide our Services. The items below are collected in common, regardless of which app you use.</p>
     <table>
       <thead><tr><th>Category</th><th>Data Collected</th><th>How</th></tr></thead>
       <tbody>
@@ -144,10 +157,77 @@
         <tr><td>Usage Data</td><td>Feature usage history, error logs</td><td>Automatically during use</td></tr>
         <tr><td>Device Info</td><td>Device model, OS version, app version, push token (for notifications)</td><td>Automatically during use</td></tr>
         <tr><td>Subscription &amp; Purchase</td><td>Subscription status, subscription ID (payment details handled by App Store / Google Play)</td><td>At time of subscription</td></tr>
-        <tr><td>User Content</td><td>Notes, journal entries, tags, and other content entered directly in the app</td><td>User input</td></tr>
       </tbody>
     </table>
-    <p>Content you create in the app is used solely to provide service features. We do not read, analyze, or use your personal entries for any other purpose.</p>
+
+    <h3>Data Collected Per App (User Content)</h3>
+    <p>Depending on which app you use, the following additional user-generated content is collected. Select an app below to see its details.</p>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Episode</span><span class="app-tag">Web novels</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Reading history for web novels</li>
+          <li>Emotion analysis results and statistics</li>
+          <li>User settings</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Modam Budget</span><span class="app-tag">Budgeting</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Income and expense records</li>
+          <li>Wish list (items you want to buy)</li>
+          <li>Savings goals and savings records</li>
+          <li>Statistics and analytics data</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Money Synapse</span><span class="app-tag">Full finance suite</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Budget data</li>
+          <li>Finance data</li>
+          <li>Savings data</li>
+          <li>Investment and Investment Pro data</li>
+          <li>Loan data</li>
+          <li>Insurance policy data</li>
+          <li>Wish list data</li>
+          <li>Conversation history with the AI assistant "Moa"</li>
+          <li>Statistics and analytics data</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="app-acc">
+      <summary>
+        <span class="app-name-wrap"><span class="app-name">Time Synapse</span><span class="app-tag">Time management</span></span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="acc-body">
+        <ul>
+          <li>Plans and schedule data you've created</li>
+          <li>Retrospective records</li>
+          <li>Goal-setting data</li>
+          <li>Statistics and analytics data</li>
+        </ul>
+      </div>
+    </details>
+
+    <p style="margin-top:14px;">Content you create in the app is used solely to provide service features. We do not read, analyze, or use your personal entries for any other purpose.</p>
   </div>
 
   <!-- 03 -->
