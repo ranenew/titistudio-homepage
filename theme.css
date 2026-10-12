@@ -1,0 +1,26 @@
+/* Gallery Split — selected hybrid direction. Logo files remain unchanged. */
+:root {
+  --gs-white: #FFFFFF;
+  --gs-soft-white: #F7F8FC;
+  --gs-ink: #242944;
+  --gs-cosmic-navy: #08091F;
+  --gs-lilac: #BCABED;
+  --gs-lime: #B5CD83;
+  --gs-rose: #EAB0C6;
+  --gs-divider: #E4E7EE;
+  --gs-body: #667085;
+  --gs-body-dark: #CCC8E0;
+  --gs-lime-text: #637C3F;
+  --gs-font: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --gs-content-max: 1280px;
+  --gs-page-gutter: 64px;
+  --gs-hero-radius: 32px;
+  --gs-card-radius: 24px;
+  --gs-button-radius: 999px;
+  --gs-title: clamp(40px, 3.9vw, 56px);
+  --gs-body-size: 16px;
+  --gs-studio-width: 48%;
+  --gs-product-width: 52%;
+}
+@media(max-width:1100px){:root{--gs-page-gutter:32px;--gs-title:clamp(36px,3.9vw,48px)}}
+@media(max-width:900px){:root{--gs-page-gutter:24px;--gs-title:clamp(32px,8.2vw,40px);--gs-hero-radius:24px;--gs-card-radius:20px}}
