@@ -73,9 +73,11 @@
   </style>
   <link rel="stylesheet" href="../theme.css">
   <link rel="stylesheet" href="../legal.css">
+  <link rel="stylesheet" href="../footer.css?v=20261013-4">
+  <script src="../footer.js?v=20261013-4" defer></script>
 </head>
 <body>
-<header class="legal-header"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
+<header class="legal-header" id="page-top" tabindex="-1"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
 <div class="page-wrap">
 
   <div class="top-bar">
@@ -315,8 +317,45 @@
     <p style="margin-top:20px;">For any questions about these Terms, please contact us at the email above. We aim to respond within 7 business days.</p>
   </div>
 
-  <section class="business-info" aria-labelledby="business-title"><h2 id="business-title">Business information</h2><dl class="business-details"><div><dt>Registered business name</dt><dd>TiTi Studio (티티스튜디오)</dd></div><div><dt>Representative</dt><dd>Park Dasol (박다솔)</dd></div><div><dt>Business registration number</dt><dd>116-08-87972</dd></div><div><dt>Business address</dt><dd>24, Buyong-ro 31beon-gil, Paengseong-eup, Pyeongtaek-si, Gyeonggi-do, Republic of Korea</dd></div><div><dt>Customer support phone</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>Customer support email</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>Mail-order business registration number</dt><dd>2026-경기평택-0719</dd></div></dl></section>
-<footer class="doc-footer"><a href="../index.html">Home</a><a href="../terms/en.html">Terms of Use</a><a href="../privacy/en.html">Privacy Policy</a><a href="../delete-account/en.html">Account Deletion</a><span class="brand">TiTi Studio · Think. Try. Together.</span></footer>
+  <footer class="titi-footer titi-footer--legal" id="site-footer" tabindex="-1" aria-label="Company information and contact">
+    <div class="titi-footer__main">
+      <div class="titi-footer__identity">
+        <a class="titi-footer__brand" href="../index.html" aria-label="TiTi Studio home">TiTi Studio<span class="titi-footer__colors" aria-hidden="true"><i></i><i></i><i></i></span></a>
+        <p class="titi-footer__tagline">Think. Try. Together.</p>
+      </div>
+      <div class="titi-footer__contact">
+        <div class="titi-footer__email-group">
+          <a class="titi-footer__email" href="mailto:titi@titistudio.kr" aria-label="Email TiTi Studio">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <span>titi@titistudio.kr</span><span aria-hidden="true">↗</span>
+          </a>
+          <button class="titi-footer__copy" type="button" aria-label="Copy email address" aria-describedby="footer-copy-status" hidden>
+            <svg class="titi-footer__copy-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>
+            <svg class="titi-footer__check-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+        <p class="titi-footer__status" id="footer-copy-status" role="status" aria-live="polite" aria-atomic="true">Questions or feedback? Get in touch.</p>
+      </div>
+    </div>
+    <details class="titi-footer__business">
+      <summary><span class="titi-footer__summary-label">Business information<svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 8 5 5 5-5"/></svg></span><span class="titi-footer__summary-note">TiTi Studio · Park Dasol</span></summary>
+      <dl class="titi-footer__business-grid"><div><dt>Registered business name</dt><dd>TiTi Studio (티티스튜디오)</dd></div><div><dt>Representative</dt><dd>Park Dasol (박다솔)</dd></div><div><dt>Business registration number</dt><dd>116-08-87972</dd></div><div><dt>Business address</dt><dd>24, Buyong-ro 31beon-gil, Paengseong-eup, Pyeongtaek-si, Gyeonggi-do, Republic of Korea</dd></div><div><dt>Customer support phone</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>Customer support email</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>Mail-order business registration number</dt><dd>2026-경기평택-0719</dd></div></dl>
+    </details>
+    <div class="titi-footer__bottom">
+      <nav class="titi-footer__policies" aria-label="Policies">
+        <a href="../terms/en.html">Terms of Use</a>
+        <a class="titi-footer__privacy" href="../privacy/en.html">Privacy Policy</a>
+        <a href="../delete-account/en.html">Account Deletion</a>
+      </nav>
+      <nav class="titi-footer__social" aria-label="Social media">
+        <a href="https://x.com/thinktry_studio" target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a>
+        <a href="https://www.instagram.com/thinktry_studio" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="titi-footer__copyright">© 2026 TiTi Studio</p>
+      <a class="titi-footer__top" href="#page-top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
 
 </div>
 </body>

@@ -80,9 +80,11 @@
   </style>
   <link rel="stylesheet" href="../theme.css">
   <link rel="stylesheet" href="../legal.css">
+  <link rel="stylesheet" href="../footer.css?v=20261013-4">
+  <script src="../footer.js?v=20261013-4" defer></script>
 </head>
 <body>
-<header class="legal-header"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
+<header class="legal-header" id="page-top" tabindex="-1"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
 <div class="page-wrap">
 
   <div class="top-bar">
@@ -400,8 +402,45 @@
     </ul>
   </div>
 
-  <section class="business-info" aria-labelledby="business-title"><h2 id="business-title">사업자 정보</h2><dl class="business-details"><div><dt>상호명</dt><dd>티티스튜디오</dd></div><div><dt>대표자명</dt><dd>박다솔</dd></div><div><dt>사업자등록번호</dt><dd>116-08-87972</dd></div><div><dt>사업장 소재지</dt><dd>경기도 평택시 팽성읍 부용로31번길 24</dd></div><div><dt>고객지원 전화번호</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>고객지원 이메일</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>통신판매업 신고번호</dt><dd>2026-경기평택-0719</dd></div></dl></section>
-<footer class="doc-footer"><a href="../index.html">홈으로</a><a href="../terms/ko.html">이용약관</a><a href="../privacy/ko.html">개인정보처리방침</a><a href="../delete-account/ko.html">계정 삭제 안내</a><span class="brand">TiTi Studio · Think. Try. Together.</span></footer>
+  <footer class="titi-footer titi-footer--legal" id="site-footer" tabindex="-1" aria-label="회사 정보 및 문의">
+    <div class="titi-footer__main">
+      <div class="titi-footer__identity">
+        <a class="titi-footer__brand" href="../index.html" aria-label="TiTi Studio 홈페이지로">TiTi Studio<span class="titi-footer__colors" aria-hidden="true"><i></i><i></i><i></i></span></a>
+        <p class="titi-footer__tagline">Think. Try. Together.</p>
+      </div>
+      <div class="titi-footer__contact">
+        <div class="titi-footer__email-group">
+          <a class="titi-footer__email" href="mailto:titi@titistudio.kr" aria-label="티티스튜디오에 이메일 문의">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <span>titi@titistudio.kr</span><span aria-hidden="true">↗</span>
+          </a>
+          <button class="titi-footer__copy" type="button" aria-label="이메일 주소 복사" aria-describedby="footer-copy-status" hidden>
+            <svg class="titi-footer__copy-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>
+            <svg class="titi-footer__check-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>
+            <span>복사</span>
+          </button>
+        </div>
+        <p class="titi-footer__status" id="footer-copy-status" role="status" aria-live="polite" aria-atomic="true">제품에 대한 의견을 편하게 보내주세요.</p>
+      </div>
+    </div>
+    <details class="titi-footer__business">
+      <summary><span class="titi-footer__summary-label">사업자 정보<svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 8 5 5 5-5"/></svg></span><span class="titi-footer__summary-note">티티스튜디오 · 대표 박다솔</span></summary>
+      <dl class="titi-footer__business-grid"><div><dt>상호명</dt><dd>티티스튜디오</dd></div><div><dt>대표자명</dt><dd>박다솔</dd></div><div><dt>사업자등록번호</dt><dd>116-08-87972</dd></div><div><dt>사업장 소재지</dt><dd>경기도 평택시 팽성읍 부용로31번길 24</dd></div><div><dt>고객지원 전화번호</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>고객지원 이메일</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>통신판매업 신고번호</dt><dd>2026-경기평택-0719</dd></div></dl>
+    </details>
+    <div class="titi-footer__bottom">
+      <nav class="titi-footer__policies" aria-label="이용 정책">
+        <a href="../terms/ko.html">이용약관</a>
+        <a class="titi-footer__privacy" href="../privacy/ko.html">개인정보처리방침</a>
+        <a href="../delete-account/ko.html">계정 삭제 안내</a>
+      </nav>
+      <nav class="titi-footer__social" aria-label="소셜 미디어">
+        <a href="https://x.com/thinktry_studio" target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a>
+        <a href="https://www.instagram.com/thinktry_studio" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="titi-footer__copyright">© 2026 TiTi Studio</p>
+      <a class="titi-footer__top" href="#page-top">맨 위로 <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
 
 </div>
 </body>

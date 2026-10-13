@@ -105,3 +105,22 @@
 @media (prefers-reduced-motion: reduce) {
   .titi-footer *, .titi-footer *::before, .titi-footer *::after { transition: none !important; }
 }
+
+/* Legal documents already provide their own content width and side gutters. */
+.titi-footer.titi-footer--legal {
+  width: 100%;
+  max-width: none;
+  margin-top: 40px;
+  padding-bottom: 0;
+}
+.titi-footer--legal .titi-footer__business-grid { grid-template-columns: minmax(0, 1fr); }
+.titi-footer--legal .titi-footer__business-grid > div { grid-template-columns: 190px minmax(0, 1fr); }
+.titi-footer--legal .titi-footer__business-grid a { overflow-wrap: anywhere; }
+.titi-footer:lang(en) .titi-footer__copy { min-width: 80px; }
+@media (max-width: 600px) {
+  .titi-footer--legal .titi-footer__business-grid > div { grid-template-columns: 116px minmax(0, 1fr); }
+  .titi-footer--legal:lang(en) .titi-footer__business-grid > div { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+}
+@media (max-width: 360px) {
+  .titi-footer--legal .titi-footer__business-grid > div { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+}

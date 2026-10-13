@@ -1,0 +1,23 @@
+#moneysynapse-delete-request .cbox { display: grid; gap: 16px; }
+#moneysynapse-delete-request form,
+#moneysynapse-delete-request .provider-actions,
+#moneysynapse-delete-request #ms-delete-controls { display: grid; gap: 12px; }
+#moneysynapse-delete-request label { display: grid; gap: 6px; color: #5A5A5A; font-size: 14px; }
+#moneysynapse-delete-request input[type="email"],
+#moneysynapse-delete-request input[type="password"],
+#moneysynapse-delete-request #ms-delete-confirm {
+  width: 100%; border: 1px solid #D8D3C4; border-radius: 8px;
+  padding: 11px 12px; background: #FFFEFB; color: #2D2D2D; font: inherit;
+}
+#moneysynapse-delete-request button {
+  border: 0; border-radius: 8px; padding: 11px 14px; background: #3F5576;
+  color: white; font: inherit; font-weight: 600; cursor: pointer;
+}
+#moneysynapse-delete-request button:disabled { cursor: not-allowed; opacity: 0.45; }
+#moneysynapse-delete-request #ms-delete-signout { background: #E8EBEF; color: #3F5576; }
+#moneysynapse-delete-request #ms-delete-status[data-kind="error"] { color: #A3453E; }
+#moneysynapse-delete-request #ms-delete-status[data-kind="pending"] { color: #9A5F1F; }
+#moneysynapse-delete-request #ms-delete-status[data-kind="success"] { color: #4F7538; }
+@media (min-width: 560px) {
+  #moneysynapse-delete-request .provider-actions { grid-template-columns: repeat(3, 1fr); }
+}
