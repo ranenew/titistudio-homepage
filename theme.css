@@ -1,4 +1,4 @@
-/* Gallery Split — selected hybrid direction. Logo files remain unchanged. */
+/* Gallery Split — shared brand tokens. Original logo assets stay unchanged. */
 :root {
   --gs-white: #FFFFFF;
   --gs-soft-white: #F7F8FC;
@@ -13,14 +13,26 @@
   --gs-lime-text: #637C3F;
   --gs-font: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
   --gs-content-max: 1280px;
-  --gs-page-gutter: 64px;
-  --gs-hero-radius: 32px;
-  --gs-card-radius: 24px;
+  --gs-page-gutter: 20px;
+  --gs-hero-radius: 24px;
+  --gs-card-radius: 20px;
   --gs-button-radius: 999px;
-  --gs-title: clamp(40px, 3.9vw, 56px);
-  --gs-body-size: 16px;
+  --gs-title: clamp(1.875rem, 7.7vw, 2.5rem);
+  --gs-body-size: 1rem;
   --gs-studio-width: 48%;
   --gs-product-width: 52%;
 }
-@media(max-width:1100px){:root{--gs-page-gutter:32px;--gs-title:clamp(36px,3.9vw,48px)}}
-@media(max-width:900px){:root{--gs-page-gutter:24px;--gs-title:clamp(32px,8.2vw,40px);--gs-hero-radius:24px;--gs-card-radius:20px}}
+@media (min-width: 37.5em) {
+  :root { --gs-page-gutter: 28px; }
+}
+@media (min-width: 43.75em) {
+  :root { --gs-title: clamp(1.875rem, 3.65vw, 2.5rem); }
+}
+@media (min-width: 68.75em) {
+  :root {
+    --gs-page-gutter: clamp(32px, 4.5vw, 64px);
+    --gs-title: clamp(2.5rem, 3.9vw, 3.5rem);
+    --gs-hero-radius: 32px;
+    --gs-card-radius: 24px;
+  }
+}
