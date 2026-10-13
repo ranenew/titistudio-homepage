@@ -106,15 +106,6 @@ p,h1,h2,h3{word-break:keep-all;overflow-wrap:break-word}
 .principles h3{font-size:16px;font-weight:600;line-height:1.5}
 .principles h3 em{font-style:normal;font-size:14px;color:var(--gs-body);margin-left:16px;font-weight:400}
 .principles p{font-size:13px;color:var(--gs-body);line-height:1.7;margin-top:8px}
-.contact-section{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:35px 39px;background:var(--gs-soft-white);border-radius:var(--gs-card-radius)}
-.contact-section .eyebrow{font-size:9px;color:var(--gs-body)}
-.contact-section h2{font-size:27px;line-height:1.4;letter-spacing:-1px;margin-top:9px;font-weight:650}
-.contact-section>div>p:last-child{font-size:13px;line-height:1.7;margin-top:9px;color:var(--gs-body)}
-.contact-note{border-left:1px solid var(--gs-divider);padding-left:30px;min-width:230px}
-.contact-note>span{font-size:9px;letter-spacing:1.4px;color:var(--gs-body)}
-.footer{display:flex;align-items:center;gap:30px;padding:34px 0 37px;font-size:11px;color:var(--gs-body)}
-.footer strong{font-size:15px;color:var(--gs-ink);letter-spacing:-.4px}
-.footer span{margin-left:auto;font-size:10px}
 .mobile-only{display:none}
 
 @media(min-width:1500px){.hero{min-height:716px}
@@ -207,14 +198,6 @@ p,h1,h2,h3{word-break:keep-all;overflow-wrap:break-word}
 .principles h3 em{display:inline;margin-left:11px;font-size:12px}
 .principles article{gap:16px;padding:20px 0}
 .principles p{font-size:14px}
-.contact-section{padding:26px 24px;align-items:flex-start;flex-direction:column;gap:23px}
-.contact-section h2{font-size:25px}
-.contact-section>div>p:last-child{font-size:14px}
-.contact-note{border-left:0;border-top:1px solid var(--gs-divider);padding:18px 0 0;width:100%;min-width:0}
-.contact-note p br{display:none}
-.footer{gap:12px;flex-wrap:wrap;padding:28px 0}
-.footer p{font-size:9px}
-.footer span{font-size:8px}
 }
 
 @media(max-width:360px){.studio-half,.product-half{padding-inline:19px}
@@ -237,9 +220,28 @@ p,h1,h2,h3{word-break:keep-all;overflow-wrap:break-word}
 
 .skip-link{position:absolute;top:-100px;left:24px;padding:14px 20px;background:white;z-index:20}
 .skip-link:focus{top:12px}
-.contact-email{font-size:16px;font-weight:550;color:var(--gs-ink);display:inline-flex;gap:16px;align-items:center;min-height:48px}
-.contact-email:hover{color:#8871b6}
-.footer{flex-wrap:wrap}
-.footer-links{width:100%;display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--gs-divider);padding-top:20px;font-size:11px}
-.footer-links a:hover{color:var(--gs-ink)}
-@media(max-width:900px){.contact-email{font-size:14px}.footer-links{gap:15px;font-size:10px}}
+
+/* Compact homepage footer */
+.footer{padding:24px 0;border-top:1px solid var(--gs-divider);color:var(--gs-body)}
+.footer-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.footer-brand{display:inline-flex;align-items:center;min-height:44px;font-size:18px;font-weight:700;letter-spacing:-.5px;color:var(--gs-ink)}
+.footer-email{display:inline-flex;align-items:center;min-height:44px;gap:12px;font-size:13px;font-weight:500;color:var(--gs-ink)}
+.footer-business{display:flex;flex-wrap:wrap;gap:4px 20px;max-width:1000px;margin:10px 0 12px;font-size:12px;line-height:1.8}
+.footer-business>div{display:flex;align-items:baseline;gap:6px;min-width:0}
+.footer-business dt{flex:none}
+.footer-business dd{margin:0;word-break:keep-all;overflow-wrap:anywhere}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap}
+.footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:0 20px;font-size:12px}
+.footer-links>div{display:flex;align-items:center;flex-wrap:wrap;gap:0 20px}
+.footer-links a{display:inline-flex;align-items:center;gap:4px;min-height:44px}
+.footer-links .privacy-link{font-weight:600;color:var(--gs-ink)}
+.footer-copyright{font-size:11px;line-height:1.7;white-space:nowrap}
+.footer a:hover{color:var(--gs-ink);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:600px){
+  .footer{padding:20px 0 24px}
+  .footer-brand{font-size:17px}
+  .footer-email{font-size:12px;gap:8px}
+  .footer-business{gap:5px 16px;margin:8px 0 10px}
+  .footer-links,.footer-links>div{gap:0 16px}
+  .footer-bottom{align-items:flex-start;flex-direction:column;gap:6px}
+}
