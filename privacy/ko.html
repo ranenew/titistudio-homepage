@@ -4,15 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>개인정보처리방침 — TiTi Studio</title>
-  <meta name="description" content="TiTi Studio의 개인정보처리방침입니다. 에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 모든 TiTi Studio 서비스에 공통 적용됩니다.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+  <meta name="description" content="TiTi Studio의 개인정보처리방침입니다. 에피소드, 모담 가계부, 머니 시냅스 등 모든 TiTi Studio 서비스에 공통 적용됩니다.">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.8; }
+    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: var(--gs-font); -webkit-font-smoothing: antialiased; line-height: 1.8; }
     .page-wrap { max-width: 720px; margin: 0 auto; padding: 80px 40px 120px; }
     .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 12px; }
     .back-btn { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: #7A7A7A; transition: color 0.18s; }
@@ -23,7 +19,7 @@
     .lang-a.active { font-weight: 600; color: #3F5576; }
     .lang-sep { color: #D8D3C4; font-size: 11px; padding: 0 7px; user-select: none; }
     .doc-label { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #3F5576; opacity: 0.75; margin-bottom: 14px; }
-    .doc-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 5vw, 48px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
+    .doc-title { font-family: var(--gs-font); font-size: clamp(28px, 5vw, 48px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
     .doc-subtitle { font-size: 15px; color: #7A7A7A; margin: 0 0 16px; }
     .doc-meta { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px; }
     .doc-meta span { font-size: 13px; color: #ADADAD; }
@@ -37,7 +33,7 @@
     .toc a { text-decoration: none; font-size: 14px; color: #5A5A5A; transition: color 0.18s; }
     .toc a:hover { color: #3F5576; }
     .s { margin-bottom: 52px; }
-    .s h2 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; padding-top: 8px; display: flex; align-items: baseline; gap: 10px; }
+    .s h2 { font-family: var(--gs-font); font-size: 22px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; padding-top: 8px; display: flex; align-items: baseline; gap: 10px; }
     .n { font-size: 12px; font-weight: 600; color: #3F5576; opacity: 0.6; letter-spacing: 0.05em; flex-shrink: 0; }
     .s p { font-size: 15px; line-height: 1.85; color: #5A5A5A; margin: 0 0 14px; word-break: keep-all; }
     .s p:last-child { margin-bottom: 0; }
@@ -73,7 +69,7 @@
     .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
-    .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
+    .brand { font-family: var(--gs-font); font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
     @media (max-width: 600px) {
       .page-wrap { padding: 60px 20px 100px; }
       .toc, .cbox { padding: 20px; }
@@ -82,8 +78,11 @@
       .op-table td:first-child { width: auto; white-space: normal; }
     }
   </style>
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="../legal.css">
 </head>
 <body>
+<header class="legal-header"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
 <div class="page-wrap">
 
   <div class="top-bar">
@@ -102,13 +101,13 @@
   <h1 class="doc-title">개인정보처리방침</h1>
   <p class="doc-subtitle">Privacy Policy</p>
   <div class="doc-meta">
-    <span><strong>최종 수정일:</strong> 2026년 8월 4일</span>
+    <span><strong>최종 수정일:</strong> 2026년 10월 13일</span>
     <span><strong>시행일:</strong> 2026년 7월 6일</span>
   </div>
   <hr>
 
   <div class="notice">
-    <p>본 개인정보처리방침은 TITI STUDIO가 제공하는 모든 애플리케이션 및 웹서비스(에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 및 향후 출시되는 서비스)에 공통으로 적용됩니다.</p>
+    <p>본 개인정보처리방침은 TITI STUDIO가 제공하는 모든 애플리케이션 및 웹서비스(에피소드, 모담 가계부, 머니 시냅스 및 향후 출시되는 서비스)에 공통으로 적용됩니다.</p>
   </div>
 
   <nav class="toc">
@@ -133,17 +132,7 @@
   <!-- 01 -->
   <div id="p1" class="s">
     <h2><span class="n">01</span>운영자 정보</h2>
-    <table class="op-table">
-      <tbody>
-        <tr><td>운영사</td><td>TITI STUDIO (개인사업자)</td></tr>
-        <tr><td>사업자등록번호</td><td>116-08-87972</td></tr>
-        <tr><td>업태 / 종목</td><td>정보통신업 / 응용소프트웨어 개발 및 공급업</td></tr>
-        <tr><td>개업일</td><td>2026년 6월 1일</td></tr>
-        <tr><td>문의 이메일</td><td><a href="mailto:contact@titistudio.kr" style="color:#3F5576;text-decoration:none;font-weight:500;">contact@titistudio.kr</a></td></tr>
-        <tr><td>홈페이지</td><td><a href="https://titistudio.kr" style="color:#3F5576;text-decoration:none;font-weight:500;">https://titistudio.kr</a></td></tr>
-        <tr><td>주소</td><td>개인사업자 개인정보 보호를 위해 별도 공개하지 않습니다.</td></tr>
-      </tbody>
-    </table>
+    <dl class="business-details"><div><dt>상호명</dt><dd>티티스튜디오</dd></div><div><dt>대표자명</dt><dd>박다솔</dd></div><div><dt>사업자등록번호</dt><dd>116-08-87972</dd></div><div><dt>사업장 소재지</dt><dd>경기도 평택시 팽성읍 부용로31번길 24</dd></div><div><dt>고객지원 전화번호</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>고객지원 이메일</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>통신판매업 신고번호</dt><dd>2026-경기평택-0719</dd></div><div><dt>업태 / 종목</dt><dd>정보통신업 / 응용소프트웨어 개발 및 공급업</dd></div><div><dt>개업일</dt><dd>2026년 6월 1일</dd></div><div><dt>홈페이지</dt><dd><a href="https://titistudio.kr">titistudio.kr</a></dd></div></dl>
   </div>
 
   <!-- 02 -->
@@ -208,21 +197,6 @@
           <li>보험 소유 데이터</li>
           <li>위시 데이터</li>
           <li>AI 비서 '모아'와의 대화 기록</li>
-          <li>통계 및 분석 데이터</li>
-        </ul>
-      </div>
-    </details>
-
-    <details class="app-acc">
-      <summary>
-        <span class="app-name-wrap"><span class="app-name">타임 시냅스</span><span class="app-tag">시간관리</span></span>
-        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </summary>
-      <div class="acc-body">
-        <ul>
-          <li>작성한 계획 및 일정 데이터</li>
-          <li>회고 기록</li>
-          <li>목표 설정 데이터</li>
           <li>통계 및 분석 데이터</li>
         </ul>
       </div>
@@ -371,7 +345,7 @@
       <li>삭제된 데이터는 복구되지 않으므로, 중요한 기록은 미리 백업해 주세요.</li>
     </ul>
     <div class="green-box">
-      <p>계정 삭제: 앱 내 설정 → 계정 관리 → 계정 삭제<br>또는 contact@titistudio.kr로 요청해 주세요.</p>
+      <p>계정 삭제: 앱 내 설정 → 계정 관리 → 계정 삭제<br>또는 titi@titistudio.kr로 요청해 주세요.</p>
     </div>
   </div>
 
@@ -379,7 +353,7 @@
   <div id="p10" class="s">
     <h2><span class="n">10</span>아동 개인정보 보호</h2>
     <p>본 서비스는 만 14세 미만 아동을 대상으로 하지 않습니다. 당사는 의도적으로 14세 미만 아동의 개인정보를 수집하지 않습니다.</p>
-    <p>만약 보호자가 자녀(14세 미만)의 개인정보가 수집된 사실을 발견하셨다면, contact@titistudio.kr로 즉시 알려주세요. 확인 즉시 삭제 조치하겠습니다.</p>
+    <p>만약 보호자가 자녀(14세 미만)의 개인정보가 수집된 사실을 발견하셨다면, titi@titistudio.kr로 즉시 알려주세요. 확인 즉시 삭제 조치하겠습니다.</p>
   </div>
 
   <!-- 11 -->
@@ -413,7 +387,7 @@
     <p>개인정보 처리에 관한 문의, 열람·정정·삭제·처리 정지 요청은 아래로 연락해 주세요. 영업일 기준 7일 이내에 처리됩니다.</p>
     <div class="cbox">
       <p><strong>TITI STUDIO 개인정보 보호책임자</strong></p>
-      <p>이메일: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
+      <p>이메일: <a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></p>
       <p>홈페이지: <a href="https://titistudio.kr" target="_blank" rel="noopener">https://titistudio.kr</a></p>
       <p>처리 기간: 영업일 기준 7일 이내</p>
     </div>
@@ -426,14 +400,8 @@
     </ul>
   </div>
 
-  <footer class="doc-footer">
-    <a href="../index.html">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      홈으로
-    </a>
-    <a href="../terms/">이용약관 →</a>
-    <span class="brand">Think &amp; Try</span>
-  </footer>
+  <section class="business-info" aria-labelledby="business-title"><h2 id="business-title">사업자 정보</h2><dl class="business-details"><div><dt>상호명</dt><dd>티티스튜디오</dd></div><div><dt>대표자명</dt><dd>박다솔</dd></div><div><dt>사업자등록번호</dt><dd>116-08-87972</dd></div><div><dt>사업장 소재지</dt><dd>경기도 평택시 팽성읍 부용로31번길 24</dd></div><div><dt>고객지원 전화번호</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>고객지원 이메일</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>통신판매업 신고번호</dt><dd>2026-경기평택-0719</dd></div></dl></section>
+<footer class="doc-footer"><a href="../index.html">홈으로</a><a href="../terms/ko.html">이용약관</a><a href="../privacy/ko.html">개인정보처리방침</a><a href="../delete-account/ko.html">계정 삭제 안내</a><span class="brand">TiTi Studio · Think. Try. Together.</span></footer>
 
 </div>
 </body>

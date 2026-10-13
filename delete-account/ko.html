@@ -4,15 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>티티스튜디오 계정 삭제 안내 — TiTi Studio</title>
-  <meta name="description" content="에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 티티스튜디오 앱의 계정 삭제 방법 및 삭제되는 데이터 안내. Google Play 정책에 따른 계정 삭제 가이드입니다.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+  <meta name="description" content="에피소드, 모담 가계부, 머니 시냅스 등 티티스튜디오 앱의 계정 삭제 방법 및 삭제되는 데이터 안내. Google Play 정책에 따른 계정 삭제 가이드입니다.">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.8; }
+    body { margin: 0; background: #FEFCF8; color: #2D2D2D; font-family: var(--gs-font); -webkit-font-smoothing: antialiased; line-height: 1.8; }
     .page-wrap { max-width: 720px; margin: 0 auto; padding: 80px 40px 120px; }
     .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 12px; }
     .back-btn { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; font-size: 13px; font-weight: 500; color: #7A7A7A; transition: color 0.18s; }
@@ -23,12 +19,12 @@
     .lang-a.active { font-weight: 600; color: #3F5576; }
     .lang-sep { color: #D8D3C4; font-size: 11px; padding: 0 7px; user-select: none; }
     .doc-label { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #3F5576; opacity: 0.75; margin-bottom: 14px; }
-    .doc-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 5vw, 44px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
+    .doc-title { font-family: var(--gs-font); font-size: clamp(28px, 5vw, 44px); font-weight: 500; letter-spacing: -0.02em; color: #1E1E1E; line-height: 1.15; margin: 0 0 12px; }
     .doc-subtitle { font-size: 15px; color: #7A7A7A; margin: 0 0 8px; }
     .doc-updated { font-size: 13px; color: #ADADAD; margin: 0 0 48px; }
     hr { border: none; border-top: 1px solid #E5E0D5; margin: 0 0 48px; }
     .s { margin-bottom: 48px; }
-    .s h2 { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; }
+    .s h2 { font-family: var(--gs-font); font-size: 21px; font-weight: 500; color: #1E1E1E; margin: 0 0 16px; }
     .s p { font-size: 15px; line-height: 1.85; color: #5A5A5A; margin: 0 0 14px; word-break: keep-all; }
     .s p:last-child { margin-bottom: 0; }
     .s ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
@@ -37,7 +33,7 @@
     /* 계정 삭제 방법 — 강조 카드 */
     .method-card { background: linear-gradient(135deg, #3F5576, #4C6288); color: #fff; border-radius: 16px; padding: 40px 36px; margin-bottom: 14px; box-shadow: 0 10px 28px rgba(63,85,118,0.22); }
     .method-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.16); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
-    .method-card h2 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: #fff; margin: 0 0 14px; }
+    .method-card h2 { font-family: var(--gs-font); font-size: 26px; font-weight: 500; color: #fff; margin: 0 0 14px; }
     .method-card p { font-size: 16.5px; line-height: 1.85; color: rgba(255,255,255,0.94); margin: 0; word-break: keep-all; }
     .method-card strong { color: #F4CD7A; font-weight: 600; }
     .method-note { font-size: 12.5px; color: #ADADAD; margin: 0 0 48px; padding-left: 2px; word-break: keep-all; }
@@ -71,24 +67,20 @@
     .doc-footer { border-top: 1px solid #E5E0D5; padding-top: 28px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
     .doc-footer a { text-decoration: none; font-size: 13px; color: #ADADAD; transition: color 0.18s; display: flex; align-items: center; gap: 5px; }
     .doc-footer a:hover { color: #3F5576; }
-    .brand { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
+    .brand { font-family: var(--gs-font); font-size: 14px; font-style: italic; color: #8FAF6A; opacity: 0.85; }
     @media (max-width: 600px) { .page-wrap { padding: 60px 20px 100px; } .card, .cbox { padding: 20px; } .method-card { padding: 30px 24px; } }
   </style>
 
-<template id="__bundler_thumbnail" data-bg-color="#FEFCF8">
-  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="600" fill="#FEFCF8"/>
-    <rect x="366" y="232" width="68" height="68" rx="16" fill="#3F5576"/>
-    <text x="400" y="276" font-family="Georgia,serif" font-size="22" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">TT</text>
-    <text x="400" y="322" font-family="Georgia,serif" font-size="15" font-weight="500" fill="#2D2D2D" text-anchor="middle" letter-spacing="-0.3">계정 삭제 안내</text>
-  </svg>
-</template>
+
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="../legal.css">
 </head>
 <body>
+<header class="legal-header"><a href="../index.html"><img src="../assets/titi-studio-original.png" alt=""><span>TiTi Studio<small>THINK · TRY · TOGETHER</small></span></a></header>
 <div class="page-wrap">
 
   <div class="top-bar">
-    <a href="../TiTi Studio.dc.html" class="back-btn">
+    <a href="../index.html" class="back-btn">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
       홈으로 돌아가기
     </a>
@@ -102,7 +94,7 @@
   <p class="doc-label">TiTi Studio · Account</p>
   <h1 class="doc-title">티티스튜디오 계정 삭제 안내</h1>
   <p class="doc-subtitle">TiTi Studio - Account Deletion</p>
-  <p class="doc-updated">최종 수정일: 2026년 8월 4일</p>
+  <p class="doc-updated">최종 수정일: 2026년 10월 13일</p>
   <hr>
 
   <div class="method-card">
@@ -112,7 +104,7 @@
     <h2>계정 삭제 방법</h2>
     <p>앱을 실행한 뒤 <strong>설정 &gt; 회원 탈퇴</strong> 메뉴로 들어가면, 언제든지 직접 계정을 삭제할 수 있습니다.</p>
   </div>
-  <p class="method-note">에피소드, 모담 가계부, 머니 시냅스, 타임 시냅스 등 티티스튜디오의 모든 앱은 위와 동일한 방식으로 계정을 삭제할 수 있습니다.</p>
+  <p class="method-note">에피소드, 모담 가계부, 머니 시냅스 등 티티스튜디오의 모든 앱은 위와 동일한 방식으로 계정을 삭제할 수 있습니다.</p>
 
   <div class="s">
     <h2>삭제되는 정보</h2>
@@ -174,23 +166,7 @@
       </div>
     </details>
 
-    <details class="app-acc">
-      <summary>
-        <span class="app-name-wrap"><span class="app-name">타임 시냅스</span><span class="app-tag">시간관리</span></span>
-        <svg class="chev" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </summary>
-      <div class="acc-body">
-        <ul>
-          <li>사용자 계정 정보 및 이메일 주소</li>
-          <li>작성한 계획 및 일정 데이터</li>
-          <li>회고 기록</li>
-          <li>목표 설정 데이터</li>
-          <li>통계 및 분석 데이터</li>
-          <li>앱 내 저장된 개인 설정</li>
-        </ul>
-      </div>
-    </details>
-  </div>
+    </div>
 
   <div class="s">
     <h2>구독 관련 안내</h2>
@@ -218,19 +194,13 @@
     <p>계정 삭제와 관련하여 문의가 필요한 경우 아래로 연락해 주세요.</p>
     <div class="cbox">
       <p>TiTi Studio</p>
-      <p>이메일: <a href="mailto:contact@titistudio.kr">contact@titistudio.kr</a></p>
+      <p>이메일: <a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></p>
       <p>처리 기간: 영업일 기준 7일 이내</p>
     </div>
   </div>
 
-  <footer class="doc-footer">
-    <a href="../TiTi Studio.dc.html">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      홈으로 돌아가기
-    </a>
-    <a href="../privacy/ko.html">개인정보처리방침 →</a>
-    <span class="brand">Think &amp; Try</span>
-  </footer>
+  <section class="business-info" aria-labelledby="business-title"><h2 id="business-title">사업자 정보</h2><dl class="business-details"><div><dt>상호명</dt><dd>티티스튜디오</dd></div><div><dt>대표자명</dt><dd>박다솔</dd></div><div><dt>사업자등록번호</dt><dd>116-08-87972</dd></div><div><dt>사업장 소재지</dt><dd>경기도 평택시 팽성읍 부용로31번길 24</dd></div><div><dt>고객지원 전화번호</dt><dd><a href="tel:+821081651081">010-8165-1081</a></dd></div><div><dt>고객지원 이메일</dt><dd><a href="mailto:titi@titistudio.kr">titi@titistudio.kr</a></dd></div><div><dt>통신판매업 신고번호</dt><dd>2026-경기평택-0719</dd></div></dl></section>
+<footer class="doc-footer"><a href="../index.html">홈으로</a><a href="../terms/ko.html">이용약관</a><a href="../privacy/ko.html">개인정보처리방침</a><a href="../delete-account/ko.html">계정 삭제 안내</a><span class="brand">TiTi Studio · Think. Try. Together.</span></footer>
 
 </div>
 </body>
